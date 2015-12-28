@@ -1,0 +1,45 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"ApplySyntax",
+		"AutoFileName",
+		"AutoSelect",
+		"Chmod",
+		"Diffy",
+		"DocBlockr",
+		"Emmet",
+		"FileBrowser",
+		"FileDiffs",
+		"FileModifyStatus",
+		"FileSystem Autocompletion",
+		"JavaScript Completions",
+		"JavaScript Console",
+		"JavaScriptFunctionDefinition",
+		"JSHint",
+		"JSONLint",
+		"Jump Along Indent",
+		"Material Color Scheme",
+		"Material Theme",
+		"Package Control",
+		"PHP Companion",
+		"PHP Completions Kit",
+		"PHP-Twig",
+		"Phpcs",
+		"PhpNamespace",
+		"PHPUnit Completions",
+		"PHPUnit Snippets",
+		"SideBarEnhancements",
+		"SideBarFolders",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-annotations",
+		"SublimeLinter-php",
+		"Theme - Night",
+		"Theme - Nil",
+		"View In Browser"
+	]
+}
