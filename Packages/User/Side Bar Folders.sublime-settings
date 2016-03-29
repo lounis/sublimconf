@@ -5,6 +5,15 @@
 			"path": "/media/sf_www/testBootstarp"
 		},
 		{
+			"path": "/home/lounis/Yii-reservation-booking-module"
+		},
+		{
+			"path": "/home/lounis/rd00/tibyane"
+		},
+		{
+			"path": "/home/lounis/rd00/payment"
+		},
+		{
 			"path": "/home/lounis/rd00/nethomo-blog"
 		},
 		{
@@ -41,6 +50,9 @@
 			"path": "/home/lounis/rd00/inchmobile/project"
 		},
 		{
+			"path": "/home/lounis/rd00/inchallah"
+		},
+		{
 			"path": "/home/lounis/rd00/experts"
 		},
 		{
@@ -51,6 +63,9 @@
 		},
 		{
 			"path": "/home/lounis/myapp"
+		},
+		{
+			"path": "/home/lounis/calendar"
 		},
 		{
 			"path": "/home/lounis/app"
