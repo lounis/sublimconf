@@ -38,7 +38,7 @@ STREAM_STDOUT = 1
 STREAM_STDERR = 2
 STREAM_BOTH = STREAM_STDOUT + STREAM_STDERR
 
-PYTHON_CMD_RE = re.compile(r'(?P<script>[^@]+)?@python(?P<version>[\d\.]+)?')
+PYTHON_CMD_RE = re.compile(r'(?P<script>[^@]+)?@python(?P<version>[\d\.]+|.+)?')
 VERSION_RE = re.compile(r'(?P<major>\d+)(?:\.(?P<minor>\d+))?')
 
 INLINE_SETTINGS_RE = re.compile(r'(?i).*?\[sublimelinter[ ]+(?P<settings>[^\]]+)\]')
@@ -384,7 +384,7 @@ def generate_menu(name, menu_text):
     """Generate and return a sublime-menu from a template."""
 
     from . import persist
-    plugin_dir = os.path.join(sublime.packages_path(), persist.PLUGIN_DIRECTORY)
+    plugin_dir = os.path.join(sublime.packages_path(), persist.PLUGIN_DIRECTORY, 'menus')
     path = os.path.join(plugin_dir, '{}.sublime-menu.template'.format(name))
 
     with open(path, encoding='utf8') as f:
@@ -803,6 +803,9 @@ def find_python(version=None, script=None, module=None):
         # No version was specified, get the default python
         path = find_executable('python')
         persist.debug('find_python: default python =', path)
+    elif os.path.isfile(version):
+        # Specified version is a path to an executable, use it instead.
+        path = version
     else:
         version = str(version)
         requested_version = extract_major_minor_version(version)

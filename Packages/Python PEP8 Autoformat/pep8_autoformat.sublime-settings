@@ -1,7 +1,7 @@
 {
     "indent-size": 4,
 	// autoformat code on save ?
-	"autoformat_on_save": true,
+	"autoformat_on_save": false,
 
     // enable possibly unsafe changes (E226, E24, W6)
     // aggressive level, 0 to disable:
